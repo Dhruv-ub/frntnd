@@ -1,0 +1,78 @@
+/* General Container */
+.home-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    gap: 40px;  /* Space between components */
+  }
+  
+  /* Container for Form */
+  .form-container {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;  /* Space below the form */
+  }
+  
+  /* Container for Drag-and-Drop Flow */
+  .drag-drop-flow-container {
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+  }
+  
+  /* Container for Flowchart */
+  .nested-flow-chart-container {
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+  }
+  
+  /* Make sure everything is responsive */
+  @media (max-width: 768px) {
+    .home-page-container {
+      padding: 10px;
+    }
+  
+    .form-container, .drag-drop-flow-container, .nested-flow-chart-container {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  /* Optional Styling to Improve Visual Hierarchy */
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #444;
+  }
+  
+  button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

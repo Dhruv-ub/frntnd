@@ -1,0 +1,360 @@
+/* Global Styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f7fa;
+  color: #333;
+  overflow-x: hidden;
+  padding-right: 20px; /* Adjust for scrollbar */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+input, textarea {
+  border: none;
+  outline: none;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Container Styles */
+.container {
+  width: 100%;
+  max-width: 1200px; /* Limit max width */
+  margin: 0 auto;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Gradient Backgrounds */
+.bg-gradient {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+/* Section Titles */
+h1, h2, h3 {
+  font-weight: 700;
+  color: #333;
+}
+
+/* Button Styles */
+button, .button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  border-radius: 50px;
+  color: white;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+}
+
+button:hover, .button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+button:active, .button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:focus, .button:focus {
+  outline: none;
+}
+
+/* Navbar Styling */
+nav {
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: center; /* Align navbar content horizontally */
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #4facfe;
+}
+
+/* API Details Page */
+.api-details-container {
+  background: linear-gradient(135deg, #ffffff, #f7f9fc);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 3rem;
+}
+
+.api-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.api-details-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.api-details-header .button {
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.api-details-header .button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.api-details-section {
+  margin-bottom: 2rem;
+}
+
+.api-details-section h2 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #4facfe;
+  padding-bottom: 0.5rem;
+}
+
+.api-details-section p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.api-details-section .key-value {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #f4f7fa;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.api-details-section .key-value:hover {
+  background: #eaf3fe;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.api-details-section .key-value .key {
+  font-weight: 700;
+  color: #333;
+}
+
+.api-details-section .key-value .value {
+  color: #555;
+  font-style: italic;
+}
+
+/* Code Block Styles */
+.code-block {
+  background: #2e2e3c;
+  color: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  font-family: 'Courier New', Courier, monospace;
+  overflow-x: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.code-block pre {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+/* Interactive Animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Button Animations */
+button, .api-card {
+  transition: all 0.3s ease;
+}
+
+/* Card Styles */
+.api-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.api-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.api-card .api-title {
+  font-size: 1.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.api-card .api-description {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.api-card .api-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+/* API List Styles */
+.api-list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4facfe;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00f2fe;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .api-details-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .api-details-section .key-value {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .api-list-container {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+}
+
+/* Footer Styles */
+footer {
+  background: #2e2e3c;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 5rem;
+  border-top: 5px solid #4facfe;
+}
+
+footer a {
+  color: white;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #00f2fe;
+  text-decoration: none;
+}
+
+/* Hover Effects for Buttons */
+button:hover,
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:focus,
+.button:focus {
+  outline: none;
+}
+
+/* Header and Section Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header, .api-details-container, .api-card, footer {
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* Adjustments to form and spacing */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
